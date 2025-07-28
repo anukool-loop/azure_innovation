@@ -3,10 +3,10 @@ import React from "react";
 
 export const SolutionsSection: React.FC = () => {
   return (
-    <section className="self-end mt-20 mr-8 w-full max-w-[1308px] max-md:mt-10 max-md:mr-2.5 max-md:max-w-full">
+    <section className="self-end w-full max-md:mt-10  max-md:max-w-full px-[100px]">
       <div className="flex gap-5 max-md:flex-col">
-        <div className="w-[57%] max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col items-start w-full text-2xl text-black max-md:max-w-full">
+        <div className="w-[57%] max-md:ml-0 max-md:w-full flex items-center">
+          <div className="flex flex-col items-start justify-center w-full text-2xl text-black max-md:max-w-full">
             <h2 className="text-5xl leading-none max-md:text-4xl">
               Our Solutions
             </h2>
