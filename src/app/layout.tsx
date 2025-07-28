@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import fav from "@/app/favicon.svg"
+// import fav from "@/app/favicon.svg"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +24,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Azure Innovation",
   description: "Azure Innovations is a dynamic Apple Reseller and Service Provider, supplying genuine Apple products to individuals and educational institutions. Headquartered in Naraina (Delhi) with branches in Noida and Gurgaon, we ensure seamless service across NCR.",
-  icons: {
-    icon: fav.src,
-    apple: fav.src
-  }
+  // icons: {
+  //   icon: fav.src,
+  //   apple: fav.src
+  // }
 };
 
 export default function RootLayout({
