@@ -1,4 +1,5 @@
 "use client";
+import { images } from "@/assets";
 import React from "react";
 
 export const ProductShowcase: React.FC = () => {
@@ -21,8 +22,9 @@ export const ProductShowcase: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap w-full min-h-[272px] max-md:max-w-full">
-          <div className="flex overflow-hidden relative flex-1 shrink items-start pr-12 pl-40 h-full bg-gray-200 basis-0 min-w-60 max-md:px-5">
+        <div className="flex flex-wrap w-full h-[285px] max-md:max-w-full ">
+
+          <div className="flex overflow-hidden border relative flex-1 shrink items-start pr-12 pl-40 h-full bg-gray-200 basis-0 min-w-60 max-md:px-5">
             <div className="z-0 my-auto w-40 max-w-[168px] min-h-[143px]">
               <h3 className="text-2xl leading-10 text-black">
                 Apple <br />
@@ -35,9 +37,10 @@ export const ProductShowcase: React.FC = () => {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/2200bccc58996031fc977633559751d17b6ba25d?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
               alt="AirPods Max"
-              className="object-contain absolute bottom-0 right-64 z-0 self-start aspect-[0.9] h-[272px] left-[-141px] min-w-60 w-[245px]"
+              className="object-contain absolute bottom-0 right-64 z-0 self-start aspect-[0.9] h-[272px] left-[-71px] min-w-60 w-[245px]"
             />
           </div>
+
           <div className="flex overflow-hidden relative flex-1 shrink items-start pr-12 pl-40 h-full bg-black basis-0 min-w-60 max-md:px-5">
             <div className="flex z-0 flex-col justify-center my-auto w-40 max-w-44 min-h-36">
               <h3 className="text-3xl leading-10 text-white">
@@ -49,9 +52,9 @@ export const ProductShowcase: React.FC = () => {
               </p>
             </div>
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ecb5a6f8b6ca2e69ecb67d39224f99620fb60603?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
+              src={images.pods.src}
               alt="AirPods"
-              className="object-contain absolute bottom-12 right-52 z-0 self-start aspect-[1.38] left-[-92px] min-w-60 top-[47px] w-[244px]"
+              className="object-contain absolute bottom-12 right-52 z-0 self-start left-[-45px]  min-w-60 top-[47px]  h-[177px]"
             />
           </div>
         </div>
@@ -67,20 +70,11 @@ export const ProductShowcase: React.FC = () => {
                   fontWeight: 400,
                 }}
               >
-                Macbook{" "}
-              </span>
-              <span
-                style={{
-                  fontFamily:
-                    "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: 400,
-                }}
-              >
-                Air
+                Macbook Air
               </span>
             </h2>
             <p className="mt-4 text-sm leading-6 font-[275] text-neutral-900">
-              The new 15‑inch MacBook Air makes room for more of what you love
+              The new 15-inch MacBook Air makes room for more of what you love
               with a spacious Liquid Retina display.
             </p>
           </div>
@@ -91,7 +85,7 @@ export const ProductShowcase: React.FC = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/d9810ca12938e2d33ab32362ce24ee1e94cfe80f?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
           alt="MacBook Air"
-          className="object-contain absolute bottom-0 left-2/4 z-0 self-start -translate-x-2/4 aspect-[0.8] h-[605px] min-w-60 translate-y-[0%] w-[482px] max-md:max-w-full"
+          className="object-contain absolute bottom-0 right-0 z-0 self-start w-[325x]  h-[605px] min-w-60 translate-y-[0%]  max-md:max-w-full"
         />
       </div>
     </section>
