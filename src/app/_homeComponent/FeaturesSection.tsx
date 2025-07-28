@@ -3,7 +3,7 @@ import React from "react";
 
 export const FeaturesSection: React.FC = () => {
   return (
-    <section className="flex flex-col px-20 py-20 mt-20 w-full text-white bg-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
+    <section className="flex flex-col px-20 py-20 w-full text-white bg-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <h2 className="self-start text-5xl leading-none max-md:max-w-full max-md:text-4xl">
         Azure Innovations Features
       </h2>

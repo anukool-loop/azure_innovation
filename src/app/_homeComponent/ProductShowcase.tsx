@@ -22,7 +22,7 @@ export const ProductShowcase: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap w-full h-[285px] max-md:max-w-full ">
+        <div className="flex flex-wrap w-full h-[290px] max-md:max-w-full ">
 
           <div className="flex overflow-hidden border relative flex-1 shrink items-start pr-12 pl-40 h-full bg-gray-200 basis-0 min-w-60 max-md:px-5">
             <div className="z-0 my-auto w-40 max-w-[168px] min-h-[143px]">
@@ -59,7 +59,7 @@ export const ProductShowcase: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex overflow-hidden relative flex-1 shrink gap-px items-start py-52 pr-64 pl-14 bg-gray-200 basis-0 min-h-[600px] min-w-60 max-md:px-5 max-md:py-24 max-md:max-w-full">
+      <div className="flex overflow-hidden relative flex-1 shrink gap-px items-start py-52 pr-64 pl-14 bg-gray-200 basis-0 h-[618px] min-w-60 max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className="z-0 flex-1 shrink my-auto basis-0 max-w-[360px] min-w-60">
           <div className="w-full">
             <h2 className="text-6xl font-thin leading-none text-black max-md:text-4xl">
