@@ -64,7 +64,7 @@ const footerSections = [
   },
 ];
 
-export const Footer: React.FC = () => {
+export const Footer: React.FC = () => { 
   return (
     <footer className="w-full px-[100px]">
       <img
