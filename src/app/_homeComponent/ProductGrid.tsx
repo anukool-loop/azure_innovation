@@ -1,8 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { ProductCard } from "./ProductCard";
 
 export const ProductGrid: React.FC = () => {
+  const [selectedKey, setSelectedKey] = useState("New Arrival");
+
+  const keys = ["New Arrival", "Bestseller", "Featured Products"];
   const firstRowProducts = [
     {
       iconSrc:
@@ -93,6 +96,8 @@ export const ProductGrid: React.FC = () => {
     },
   ];
 
+  const productsToShow = [...firstRowProducts, ...secondRowProducts];
+
   return (
     <section className="self-center w-full max-w-[1240px] max-md:max-w-full">
       <div className="flex flex-wrap gap-5 justify-between mt-16 w-full max-md:mt-10 max-md:max-w-full">
@@ -109,7 +114,7 @@ export const ProductGrid: React.FC = () => {
       </div>
 
       <div className="mt-9 w-full max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
+        <div className="flex gap-5 items-stretch max-md:flex-col">
           {firstRowProducts.map((product, index) => (
             <div key={index} className="w-3/12 max-md:ml-0 max-md:w-full">
               <ProductCard {...product} />
