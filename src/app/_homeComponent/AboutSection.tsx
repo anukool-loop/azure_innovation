@@ -19,7 +19,7 @@ export const AboutSection: React.FC = () => {
         </div>
         <div className="ml-5 w-[70%] max-md:ml-0 max-md:w-full">
           <div className="grow text-2xl leading-9 text-black font-[100] max-md:mt-10 max-md:max-w-full">
-            <p className="max-md:max-w-full">
+            <p className="max-md:max-w-full" style={{ fontWeight: 100 }}>
               Azure Innovations is a dynamic Apple Reseller and Service
               Provider, supplying genuine Apple products to individuals and
               educational institutions. Headquartered in Naraina (Delhi) with
