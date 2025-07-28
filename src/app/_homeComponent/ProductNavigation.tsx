@@ -3,7 +3,7 @@ import React from "react";
 
 export const ProductNavigation: React.FC = () => {
   return (
-    <nav className="flex flex-wrap gap-10 px-20 py-5 mt-5 w-full text-xs font-light text-white bg-black border-b border-white border-opacity-10 max-md:px-5 max-md:max-w-full">
+    <nav className="flex flex-wrap gap-10 px-[100px] py-5 w-full text-xs font-light text-white bg-black border-b border-white border-opacity-10 max-md:px-5 max-md:max-w-full">
       <div className="flex gap-2">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/933d96863eb67b9f0e5e1962dbd8b111241a9831?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"

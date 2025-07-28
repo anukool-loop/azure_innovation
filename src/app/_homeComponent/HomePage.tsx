@@ -14,8 +14,8 @@ import { Footer } from "./Footer";
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="flex flex-col items-end px-20 max-md:pl-5">
-      <div className="flex overflow-hidden flex-col pt-2.5 w-full bg-white max-w-[1440px] max-md:max-w-full">
+    <div className="flex flex-col items-end">
+      <div className="flex overflow-hidden flex-col w-full bg-white  max-md:max-w-full">
         <Header />
         <ProductNavigation />
         <HeroSection />
