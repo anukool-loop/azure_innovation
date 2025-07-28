@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { images } from "@/assets";
 
 export const HeroSection: React.FC = () => {
   return (
@@ -57,7 +58,7 @@ export const HeroSection: React.FC = () => {
         </div>
         <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/49bb60ab9567c787fbb95462fc3c97a8dd400273?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
+            src={images.bannerImage.src}
             alt="iPhone 16"
             className="object-contain grow w-full aspect-[1.1] max-md:mt-10 max-md:max-w-full"
           />
