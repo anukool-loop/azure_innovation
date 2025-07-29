@@ -31,7 +31,7 @@ export const ProductShowcase: React.FC = () => {
                 AirPods Max
               </h3>
               <p className="mt-1.5 text-sm leading-6 font-[275] text-neutral-900">
-                Computational audio. Listen, it's powerful
+                Computational audio. Listen, it&apos;s powerful
               </p>
             </div>
             <img
