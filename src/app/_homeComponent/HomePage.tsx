@@ -21,8 +21,8 @@ export const HomePage: React.FC = () => {
         <HeroSection />
         <ProductShowcase />
         <AboutSection />
-        {/* <FeaturesSection />
-        <ProductGrid />
+        <FeaturesSection />
+        {/* <ProductGrid />
         <BannerSections />
         <SolutionsSection />
         <ServiceBenefits />
