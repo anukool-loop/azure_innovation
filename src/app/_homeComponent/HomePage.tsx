@@ -24,9 +24,9 @@ export const HomePage: React.FC = () => {
         <FeaturesSection />
         <ProductGrid />
         <BannerSections />
-        {/* <SolutionsSection />
+        <SolutionsSection />
         <ServiceBenefits />
-        <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

@@ -64,34 +64,32 @@ const footerSections = [
   },
 ];
 
-export const Footer: React.FC = () => { 
+export const Footer: React.FC = () => {
   return (
-    <footer className="w-full px-[100px]">
+    <footer className="w-full px-[100px] max-xl:px-16 max-lg:px-10 max-md:px-5 bg-white text-sm text-zinc-700">
+      {/* Divider Line */}
       <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/421826147270ef3b39308a103b3f9ad1c5ed955f?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
         alt="Footer divider"
-        className="object-contain w-full aspect-[1000] max-md:max-w-full"
+        className="object-contain w-full h-px my-6"
       />
 
-      <div className="z-10 self-center py-8 w-full max-w-[1239px] max-md:max-w-full">
-        <div className="flex gap-5 justify-between items-start pr-7 w-full text-xs leading-none text-zinc-700 max-md:pr-5">
+      <div className="max-w-[1239px] mx-auto">
+        {/* Sections */}
+        <div className="flex flex-wrap justify-between gap-y-10 text-xs leading-snug">
           {footerSections.map((section, i) => (
-            <div key={i} className="flex flex-col items-start">
-              <h4 className="text-base font-semibold text-zinc-800">
-                {section.heading}
-              </h4>
+            <div key={i} className="flex flex-col min-w-[150px] max-w-xs pr-6">
+              <h4 className="text-base font-semibold text-zinc-800 mb-3">{section.heading}</h4>
               {section.links.map((link, j) => (
-                <a key={j} href="#" className="mt-2.5">
+                <a key={j} href="#" className="mt-2.5 hover:underline">
                   {link}
                 </a>
               ))}
               {section.subSections?.map((sub, k) => (
                 <div key={k} className="mt-6">
-                  <h4 className="text-base font-semibold text-zinc-800">
-                    {sub.heading}
-                  </h4>
+                  <h5 className="text-sm font-semibold text-zinc-800 mb-2">{sub.heading}</h5>
                   {sub.links.map((link, l) => (
-                    <a key={l} href="#" className="mt-2.5 block">
+                    <a key={l} href="#" className="block mt-2 hover:underline">
                       {link}
                     </a>
                   ))}
@@ -100,56 +98,30 @@ export const Footer: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col mt-8 w-full max-md:max-w-full">
-          <div className="self-start text-xs leading-none text-black">
-            Call : 98703698212
+
+        {/* Contact and Divider */}
+        <div className="mt-10 text-xs text-black">Call : 98703698212</div>
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/a28e3f1dbfb9cfd11d6644b9bc8d661ba2f05ae9?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
+          alt="Footer separator"
+          className="w-full h-px mt-4"
+        />
+
+        {/* Legal + Country */}
+        <div className="flex flex-wrap justify-between items-center mt-4 gap-y-4 text-sm text-zinc-700">
+          <div className="flex flex-wrap gap-4 items-center">
+            <span className="text-neutral-500">© 2022 Azure Inc. All rights reserved.</span>
+            {["Privacy Policy", "Terms of Use", "Sales and Refunds", "Legal", "Site Map"].map((text, i, arr) => (
+              <React.Fragment key={i}>
+                <a href="#" className="hover:underline">{text}</a>
+                {i < arr.length - 1 && (
+                  <span className="w-px h-4 bg-zinc-400 mx-1" />
+                )}
+              </React.Fragment>
+            ))}
           </div>
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/a28e3f1dbfb9cfd11d6644b9bc8d661ba2f05ae9?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
-            alt="Footer separator"
-            className="object-contain mt-2.5 w-full aspect-[1000] max-md:max-w-full"
-          />
-          <div className="flex flex-wrap gap-5 justify-between mt-2.5 w-full text-sm leading-none max-md:max-w-full">
-            <div className="flex flex-wrap gap-6">
-              <div className="flex-auto text-neutral-500">
-                Copyright © 2022 Azure Inc. All rights reserved.
-              </div>
-              <div className="flex flex-wrap flex-auto gap-2.5 text-zinc-700">
-                <a href="#" className="grow">
-                  Privacy Policy
-                </a>
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f5ec51a2cbd28c5d363110a1ab5f4f133d78f1bb?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
-                  alt="Separator"
-                  className="object-contain shrink-0 w-px aspect-[0.06]"
-                />
-                <a href="#">Terms of Use</a>
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f5ec51a2cbd28c5d363110a1ab5f4f133d78f1bb?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
-                  alt="Separator"
-                  className="object-contain shrink-0 w-px aspect-[0.06]"
-                />
-                <a href="#" className="basis-auto">
-                  Sales and Refunds
-                </a>
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f5ec51a2cbd28c5d363110a1ab5f4f133d78f1bb?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
-                  alt="Separator"
-                  className="object-contain shrink-0 w-px aspect-[0.06]"
-                />
-                <a href="#">Legal</a>
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f5ec51a2cbd28c5d363110a1ab5f4f133d78f1bb?placeholderIfAbsent=true&apiKey=3332ba944108427ea5002522aefee114"
-                  alt="Separator"
-                  className="object-contain shrink-0 w-px aspect-[0.06]"
-                />
-                <a href="#">Site Map</a>
-              </div>
-            </div>
-            <div className="text-zinc-700">India</div>
-          </div>
+          <div className="ml-auto">India</div>
         </div>
-        {/* Keep your remaining part (call, copyright, etc.) unchanged */}
       </div>
     </footer>
   );
