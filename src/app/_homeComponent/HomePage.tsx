@@ -20,8 +20,8 @@ export const HomePage: React.FC = () => {
         <ProductNavigation />
         <HeroSection />
         <ProductShowcase />
-        {/* <AboutSection />
-        <FeaturesSection />
+        <AboutSection />
+        {/* <FeaturesSection />
         <ProductGrid />
         <BannerSections />
         <SolutionsSection />
