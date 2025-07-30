@@ -17,9 +17,9 @@ export const HomePage: React.FC = () => {
     <div className="flex flex-col items-end font-poppins">
       <div className="flex overflow-hidden flex-col w-full bg-white  max-md:max-w-full">
         <Header />
-        {/* <ProductNavigation />
+        <ProductNavigation />
         <HeroSection />
-        <ProductShowcase />
+        {/* <ProductShowcase />
         <AboutSection />
         <FeaturesSection />
         <ProductGrid />
