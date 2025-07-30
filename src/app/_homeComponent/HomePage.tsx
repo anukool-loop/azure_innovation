@@ -23,8 +23,8 @@ export const HomePage: React.FC = () => {
         <AboutSection />
         <FeaturesSection />
         <ProductGrid />
-        {/* <BannerSections />
-        <SolutionsSection />
+        <BannerSections />
+        {/* <SolutionsSection />
         <ServiceBenefits />
         <Footer /> */}
       </div>
