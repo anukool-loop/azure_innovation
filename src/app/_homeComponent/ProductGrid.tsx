@@ -98,39 +98,45 @@ export const ProductGrid: React.FC = () => {
 
   const productsToShow = [...firstRowProducts, ...secondRowProducts];
 
-  return (
-    <section className="self-center w-full max-w-[1240px] max-md:max-w-full">
-      <div className="flex flex-wrap gap-5 justify-between mt-16 w-full max-md:mt-10 max-md:max-w-full">
-        <div className="flex flex-wrap gap-10 my-auto text-xl font-light text-zinc-500 max-md:max-w-full">
-          <div className="flex flex-col justify-center items-start font-medium text-center text-black">
-            <span className="text-black">New Arrival</span>
-          </div>
-          <span className="text-center">Bestseller</span>
-          <span className="basis-auto">Featured Products</span>
+return (
+    <section className="self-center w-full max-w-[1240px] px-4 mx-auto">
+      {/* Top Header */}
+      <div className="flex flex-col md:flex-row justify-between gap-5 mt-16 w-full max-md:mt-10">
+        {/* Tabs */}
+        <div className="flex flex-wrap gap-6 text-xl font-light text-zinc-500">
+          {keys.map((key) => (
+            <span
+              key={key}
+              onClick={() => setSelectedKey(key)}
+              className={`cursor-pointer ${
+                selectedKey === key
+                  ? "text-black font-medium"
+                  : "text-zinc-500"
+              }`}
+            >
+              {key}
+            </span>
+          ))}
         </div>
-        <button className="flex gap-3 justify-center items-center py-3 pr-14 pl-14 text-xl leading-8 text-center text-black border-black border-solid border-[1.385px] min-h-[57px] rounded-[119.077px] max-md:px-5">
-          <span className="self-stretch my-auto text-black">View All</span>
+
+        {/* View All Button */}
+        <button className="flex gap-3 justify-center items-center py-3 px-8 text-xl leading-8 text-black border border-black rounded-full whitespace-nowrap">
+          View All
         </button>
       </div>
 
-      <div className="mt-9 w-full max-md:max-w-full">
-        <div className="flex gap-5 items-stretch max-md:flex-col">
-          {firstRowProducts.map((product, index) => (
-            <div key={index} className="w-3/12 max-md:ml-0 max-md:w-full">
-              <ProductCard {...product} />
-            </div>
-          ))}
-        </div>
+      {/* First Row */}
+      <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+        {firstRowProducts.map((product, index) => (
+          <ProductCard key={index} {...product} />
+        ))}
       </div>
 
-      <div className="mt-4 w-full max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          {secondRowProducts.map((product, index) => (
-            <div key={index} className="w-3/12 max-md:ml-0 max-md:w-full">
-              <ProductCard {...product} />
-            </div>
-          ))}
-        </div>
+      {/* Second Row */}
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+        {secondRowProducts.map((product, index) => (
+          <ProductCard key={index} {...product} />
+        ))}
       </div>
     </section>
   );
