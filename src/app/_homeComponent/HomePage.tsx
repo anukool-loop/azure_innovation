@@ -19,8 +19,8 @@ export const HomePage: React.FC = () => {
         <Header />
         <ProductNavigation />
         <HeroSection />
-        {/* <ProductShowcase />
-        <AboutSection />
+        <ProductShowcase />
+        {/* <AboutSection />
         <FeaturesSection />
         <ProductGrid />
         <BannerSections />
